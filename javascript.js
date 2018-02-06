@@ -10,6 +10,7 @@ $(document).ready(function() {
         }
         else {
             console.log("invalid input");
+            $('h1').text("wrong account or password");
         }
     });
     register.click(function() {
@@ -21,6 +22,7 @@ $(document).ready(function() {
         }
         else {
             console.log("Please enter *username* & *password*");
+            $('h1').text("Please enter *username* & *password*")
         }
     });
     var account = {
