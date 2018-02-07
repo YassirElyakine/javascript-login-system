@@ -3,6 +3,10 @@ $(document).ready(function() {
     var getpassword = $('input[type="password"]');
     var login = $('#login');
     var register = $('#register');
+    var account = {
+        username: "yassir",
+        password: "123"
+    };
     login.click(function() {
         if(getusername.val() == account.username && getpassword.val() == account.password) {
             $('h1').text("Successfull login");
@@ -25,8 +29,5 @@ $(document).ready(function() {
             $('h1').text("Please enter *username* & *password*")
         }
     });
-    var account = {
-        username: "yassir",
-        password: "123"
 };
 });
